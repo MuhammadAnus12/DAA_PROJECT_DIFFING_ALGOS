@@ -6,32 +6,23 @@ export default function NavBar() {
       <ul className="flex space-x-4">
         <li>
             
+          <Link href="/">
+           HOME
+          </Link>
+        </li>
+        <li>
+            
           <Link href="/lcs">
             LCS Algorithm
           </Link>
         </li>
-        <li>
-
-          <Link href="/vilcs">
-           Visualize LCS Algorithm
-          </Link>
-        </li>
-        <li>
-
-          <Link href="/vimye">
-          Visualize   Myers' Algorithm
-          </Link>
-        </li>
+        
         <li>
           <Link href="/mye">
             Myers' Algorithm
           </Link>
         </li>
-        <li>
-          <Link href="/comparison">
-            Comparison
-          </Link>
-        </li>
+        
       </ul>
     </nav>
   );
