@@ -19,7 +19,7 @@ export default function NavBar() {
         
         <li>
           <Link href="/mye">
-            Myers' Algorithm
+            Myers Algorithm
           </Link>
         </li>
         
