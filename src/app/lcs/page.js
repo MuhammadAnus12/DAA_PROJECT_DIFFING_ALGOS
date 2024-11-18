@@ -12,7 +12,7 @@ const LCSPage = () => {
     <NavBar/>
     <div  className='p-5'>
       <h1  className=' text-center font-bold text-lg'>String Comparison</h1>
-      <div  className='flex '>
+      <div  className='flex gap-4'>
       <textarea
         placeholder="Enter first string"
         value={input1}
