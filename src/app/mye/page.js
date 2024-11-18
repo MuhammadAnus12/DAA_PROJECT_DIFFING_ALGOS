@@ -10,21 +10,24 @@ const MyersPage = () => {
   return (
     <>
     <NavBar/>
-    <div style={{ padding: '20px', fontFamily: 'Arial, sans-serif' }}>
-      <h1 style={{ textAlign: 'center' }}>String Comparison</h1>
+    <div  className='p-5'>
+      <h1  className=' text-center font-bold text-lg'>String Comparison</h1>
+      <div  className='flex  gap-4'>
       <textarea
         placeholder="Enter first string"
         value={input1}
         onChange={(e) => setInput1(e.target.value)}
-        style={{ width: '100%', height: '100px', marginBottom: '10px' }}
+        className='w-full  h-[100px] mb-[10px] border border-zinc-700 rounded-md p-2'
         />
       <textarea
         placeholder="Enter second string"
         value={input2}
         onChange={(e) => setInput2(e.target.value)}
-        style={{ width: '100%', height: '100px', marginBottom: '10px' }}
+        className='w-full  h-[100px] mb-[10px] border border-zinc-700 rounded-md p-2'
+
       />
-      <h2>Differences:</h2>
+      </div>
+      <h2 className='font-bold text-lg'>Differences:</h2>
       <MyersDiff input1={input1} input2={input2} />
     </div>
         </>
